@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />   
+</head>
+<body>
+  <h1>Calculator</h1>
+  <table>
+    <tr>
+      <td colspan="3"><input type='text' id="result" class ='screen' style="text-align: right;">
+      </td>
+      <td>
+          <input type='button' value = 'C' onclick="result.value='' " class="clear"/>
+      </td>
+    </tr>
+  </table>
+  <div class="calculatorGrid">
+    <input type="button" value="7" class="button" onClick="display(7)"></input>
+    <input type="button" value="8" class="button " onClick="display(8)"></input>
+    <input type="button" value="9" class="button" onClick="display(9)"></input>
+    <input type="button" id="divide"value="/" class="operator"onClick="divide()"></input>
+    <input type="button" value="4" class="button" onClick="display(4)"></input>
+    <input type="button" value="5" class="button" onClick="display(5)"></input>
+    <input type="button" value="6" class="button" onClick="display(6)"></input>
+    <input type="button" id="multiply"value="*" class="operator" onClick="multiply()"></input>
+    <input type="button" value="1" class="button" onClick="display(1)"></input>
+    <input type="button" value="2" class="button" onClick="display(2)"></input>
+    <input type="button" value="3" class="button" onClick="display(3)"></input>
+    <input type="button" id="minus" value="-" id="minus" class="operator" onClick="minus()" ></input>
+    <input type="button" value="0" class="button" onClick="display(0)"></input>
+    <input type="button" id="dot" value="."class="button" onClick="display('.')"></input>
+    <input type="button" id="plus" value="+" class="operator" onClick="plus()" ></input>
+    <input type="button" id="equal" value="=" class="operator" onClick="equals()"></input>
+  </div>
+  <div class="output headlines">
+    <h2>Previous Outputs</h2>
+    <h3>Current Output</h3>
+    <h3>placeholder</h3>
+  </div>
+  <div class="outputDone">
+    <div id="previousOutputs">  
+    </div>
+      <div id="currentOutput">
+    </div>
+    <div class="futureOutput"> 
+  </div>
+  <script src="edabit.js">  </script>
+</body>
+</html>

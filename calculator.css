@@ -1,0 +1,113 @@
+
+.button:hover, .operator:hover {opacity: 1;
+    cursor: pointer;
+    border-color:white;
+    transform: scale(1.5)
+}
+
+#equal:hover{
+    transform:rotate(350deg)scale(3);
+    color:chocolate;
+}
+
+.calculatorGrid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    border-color: white;
+    opacity: 0.4;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 30px; /*same as margin*/
+    margin-top: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+    background-color:blanchedalmond;
+}
+
+h1{
+    text-shadow:4px 4px white;
+    color: blueviolet;
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+    border: none;
+}
+
+table{
+    color: blueviolet;
+    border: 1px solid;
+    border-color: white;
+    /* width:100%; */
+    border-collapse: collapse;
+    text-align: left; 
+        /* margin-left: auto;
+        margin-right: auto; */
+    margin: 0 auto; /*first value applies to top and bottom, second one to right and left. if 4 goes clockwise, if 1 then all*/
+}
+
+.outputDone{
+    display: flex;
+    text-align: center;
+    font-display: center;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px;
+    align-content: left;
+    border: none;
+
+}
+
+h2, h3{
+    font-size: 30px;
+    color:blueviolet;
+    margin: 30px 100px;
+    border: none;
+    
+}
+
+.output{
+    display: flex;
+    text-align: center;
+    font-display: center;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+}
+
+.previousOutputs,.currentOutputs,.futureOutput{
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    font-display: center;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+}
+
+
+
+
+
+/* .formInput{
+    border-color:white;
+} */
+
+/* form{
+    color:blueviolet;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+.formGroup{
+    margin-bottom: 10px;
+} */
